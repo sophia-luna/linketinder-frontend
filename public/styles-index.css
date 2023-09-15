@@ -1,0 +1,163 @@
+/* geral */
+body, p, h1, h2{
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2{
+    font-size:30px;
+}
+
+
+
+/* navbar */
+#navbar{
+    background-color: #8FB996;
+    color:#415D43;
+    padding: 0 25px;
+    height: 60px;
+}
+
+#navbar h2, #navbar ul, #navbar-list li, #navbar nav {
+    display: inline-block;
+}
+
+#navbar h2{
+    margin: 0;
+    line-height: 60px;
+    margin-left: 55px;
+
+}
+
+#navbar nav{
+    float: right;
+}
+
+#navbar ul {
+    margin-top: 22px;
+}
+
+#navbar li {
+    margin: 0 10px;
+}
+
+#navbar-list li a{
+    text-decoration: none;
+    color:#415D43;
+}
+
+#navbar-list li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+/* banner */
+#banner {
+    height: 50vh;
+    background-image: url('img/bannerimg.png');
+    background-size: cover;
+    padding-top: 15vh;  
+}
+
+#banner-info {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: #415D43;
+    padding: 100px;
+}
+
+#banner-info h2{
+    background-color: #8FB996;
+    font-weight: bold;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px;
+}
+
+/*main*/
+#main{
+    text-align: center;
+    background-color: #00916E;
+    color: #fff;
+    padding-top: 50px;
+    height: 800px;
+}
+
+/*login */
+
+#login{
+    background-color: #14342B;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #14342B;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#login p{
+    color: #fff;
+    font-weight: bold;
+}
+
+#login h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#password{
+    margin-bottom: 20px;
+    width: 400px;
+    height: 20px;
+}
+
+#username{
+    margin-bottom: 20px;
+    width: 400px;
+    height: 20px;
+}
+
+#opcao-login{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+}
+
+#login-button{
+    margin-bottom: 40px;
+    width: 60px;
+    height: 30px;
+}
+
+/* redirecionamento cadastro */
+
+#cadastro{
+    background-color: #14342B;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 280px;
+}
+
+#cadastro p{
+    margin-top: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#cadastro h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* footer */
+
+#footer{
+    margin-top: 50px;
+    color: #14342B;
+}

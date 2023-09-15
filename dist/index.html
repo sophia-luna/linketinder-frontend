@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <title>Linketinder</title>
+</head>
+<body>
+
+    <header id="navbar">
+        <h2>Linketinder</h2>
+        <nav>
+            <ul id="navbar-list">
+                <li><a href="#login">Login</a></li>
+                <li><a href="#cadastro">Cadastre-se</a></li>
+                <li><a href="#saiba-mais">Saiba mais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="banner">
+        <div id="banner-info">
+            <h2>Linketinder: Seu futuro profissional em um swipe.</h2>
+        </div>
+    </div>
+
+    <section id="main">
+        <section id="login">
+
+            <h2>Login:</h2>
+            <label for="username"><p>Email:</p></label>
+            <input type="text" id="username" placeholder="Email:">
+            <br/>
+
+            <label for="password"><p>Senha:</p></label>
+            <input type="text" id="password" placeholder="Senha:">
+            <br/>
+
+            <label for="opcao-login"><p>Entrar como: </p></label>
+            <select id="opcao-login">
+                <option value="candidato">Candidato</option>
+                <option value="empresa">Empresa</option>
+            </select>
+            <br/>
+
+            <button id="loginButton">Log in</button>
+
+            <div id="pagina-habilitada"></div>
+        </section>
+
+        <section id="cadastro">
+        <br/>
+            <div id="cadastro-info">
+                <h2>Junte-se ao match perfeito de oportunidades!</h2>
+            </div>
+    
+            <div id="opcao-cadastro">
+                <a href="cadastro-empresa.html"><p>Cadastre-se como Empresa</p></a>
+                <p>ou</p>
+                <a href="cadastro-candidato.html"><p>Cadastre-se como Candidato</p></a>
+            </div>
+        </section>
+
+        <footer>
+            <div id="footer">
+                <p> Developed by Sophia Luna. </p>
+            </div>
+        </footer>
+</section>
+    <script src="./app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-cadastro-candidato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet"></head>
+    <title>Linketinder: Cadastre-se como candidato</title>
+</head>
+<body>
+
+    <header id="navbar">
+        <h2>Linketinder</h2>
+        <nav>
+            <ul id="navbar-list">
+                <li><a href="index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main">
+        <section id="cadastro">
+            <br/> 
+            <h2>Crie seu perfil:</h2>
+            <br/> 
+
+            <label for="nome"><p>Nome do Candidato: </p></label>
+            <input type="text" id="nome-candidato" placeholder="Nome:">
+            <br/> <br/>
+
+            <label for="cpf"><p>CPF do Candidato: </p></label>
+            <input type="text" id="cpf-candidato" placeholder="CPF:">
+            <br/> <br/>
+
+            <label for="idade"><p>Idade: </p></label>
+            <input type="text" id="idade-candidato" placeholder="Idade:">
+            <br/> <br/>
+
+            <label for="email"><p>Email: </p></label>
+            <input type="text" id="email-candidato" placeholder="Email:">
+            <br/> <br/>
+
+            <label for="password"><p>Senha: </p></label>
+            <input type="text" id="password-candidato" placeholder="Senha:">
+            <br/> <br/>
+
+            <label for="estado"><p>Estado: </p></label>
+            <input type="text" id="estado-candidato" placeholder="Estado:">
+            <br/> <br/>
+
+            <label for="cep"><p>CEP: </p></label>
+            <input type="text" id="cep-candidato" placeholder="CEP:">
+            <br/> <br/>
+            
+            <label for="descricao"><p>Descrição Pessoal: </p></label>
+            <input type="text" id="descricao-candidato" placeholder="Descrição Pessoal:">
+            <br/> <br/>
+
+            <p>Selecione suas compêtencias: </p>
+            <form>
+                <input type="checkbox" id="0c" value="0" />Assembly
+                <br />
+                <input type="checkbox" id="1c" value="1" />Frontend
+                <br />
+                <input type="checkbox" id="2c" value="2" />Backend
+                <br />
+                <input type="checkbox" id="3c" value="3" />Fullstack
+                <br />
+                <input type="checkbox" id="4c" value="4" />DevOps
+                <br />
+                <input type="checkbox" id="5c" value="5" />Cloud Computing
+                <br /><br />
+            </form>
+
+            <button id="cadastroCandidatoButton">Cadastre-se</button>
+            <br /><br />
+
+        </section>
+    </section>
+
+    <script src="./app.min.js"></script>
+</body>
+</html>

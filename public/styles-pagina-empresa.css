@@ -1,0 +1,110 @@
+/* geral */
+body, p, h1, h2{
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2{
+    font-size:30px;
+}
+
+/* navbar */
+#navbar{
+    background-color: #8FB996;
+    color:#415D43;
+    padding: 0 25px;
+    height: 60px;
+}
+
+#navbar h2 {
+    display: inline-block;
+}
+
+#navbar h2{
+    margin: 0;
+    line-height: 60px;
+    margin-left: 55px;
+
+}
+
+#navbar h2, #navbar ul, #navbar-list li, #navbar nav {
+    display: inline-block;
+}
+
+#navbar h2{
+    margin: 0;
+    line-height: 60px;
+    margin-left: 55px;
+
+}
+
+#navbar nav{
+    float: right;
+}
+
+#navbar ul {
+    margin-top: 22px;
+}
+
+#navbar li {
+    margin: 0 10px;
+}
+
+#navbar-list li a{
+    text-decoration: none;
+    color:#415D43;
+}
+
+#navbar-list li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+/* main */
+#main{
+    text-align: center;
+    background-color: #00916E;
+    color: #fff;
+    padding-top: 50px;
+    height: 1550px;
+    width: 100%;
+}
+
+#main h2{
+    color:#14342B
+}
+
+/* candidatos */
+#candidatos{
+    background-color: #8FB996;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 650px;
+    margin-top: 40px;
+}
+
+#candidatos h2{
+    color:#415D43;
+}
+
+#ver-candidatos{
+    color:#415D43;
+    height: 500px;
+}
+
+/* estatistica */
+#estatistica{
+    background-color: #14342B;
+    width: 100%;
+    height: 500px;
+    margin-top: 80px;
+}
+
+#estatistica h2{
+    color: #8FB996;
+}
+
+/* excluir */
+#excluir p{
+    color:#14342B
+}

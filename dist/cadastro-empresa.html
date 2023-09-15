@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-cadastro-empresa.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <title>Linketinder: Cadastre-se como empresa </title>
+</head>
+<body>
+    <header id="navbar">
+        <h2>Linketinder</h2>
+        <nav>
+            <ul id="navbar-list">
+                <li><a href="index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main">
+        <section id="cadastro">
+            <br/>
+            <h2>Crie seu perfil:</h2>
+            <br/>
+
+            <label for="nome"><p>Nome da Empresa: </p></label>
+            <input type="text" id="nome-empresa" placeholder="Nome:">
+            <br/> <br/>
+
+            <label for="cnpj"><p>CNPJ da Empresa: </p></label>
+            <input type="text" id="cnpj-empresa" placeholder="CNPJ:">
+            <br/> <br/>
+
+            <label for="email"><p>Email: </p></label>
+            <input type="text" id="email-empresa" placeholder="Email:">
+            <br/> <br/>
+
+            <label for="password"><p>Senha: </p></label>
+            <input type="text" id="password-empresa" placeholder="Senha:">
+            <br/> <br/>
+
+            <label for="pais"><p>País: </p></label>
+            <input type="text" id="pais-empresa" placeholder="País:">
+            <br/> <br/>
+
+            <label for="estado"><p>Estado: </p></label>
+            <input type="text" id="estado-empresa" placeholder="Estado:">
+            <br/> <br/>
+
+            <label for="cep"><p>CEP: </p></label>
+            <input type="text" id="cep-empresa" placeholder="CEP:">
+            <br/> <br/>
+            
+            <label for="descricao"><p>Descrição da Empresa: </p></label>
+            <input type="text" id="descricao-empresa" placeholder="Descrição:">
+            <br/> <br/>
+
+            <p>Selecione compêtencias desejadas: </p></label>
+            <form>
+                <input type="checkbox" id="0e" value="0" />Assembly
+                <br />
+                <input type="checkbox" id="1e" value="1" />Frontend
+                <br />
+                <input type="checkbox" id="2e" value="2" />Backend
+                <br />
+                <input type="checkbox" id="3e" value="3" />Fullstack
+                <br />
+                <input type="checkbox" id="4e" value="4" />DevOps
+                <br />
+                <input type="checkbox" id="5e" value="5" />Cloud Computing
+                <br /><br />
+            </form>
+
+            <button id="cadastroEmpresaButton">Cadastre-se</button>
+            <br /><br />
+        </section>
+    </section>
+
+    <script src="./app.min.js"></script>
+</body>
+</html>
