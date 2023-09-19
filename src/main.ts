@@ -8,6 +8,13 @@ import ApexCharts from 'apexcharts'
 let candidatos: CandidatoDAO = new CandidatoDAO
 let empresas: EmpresaDAO = new EmpresaDAO
 
+const nomeRegex: RegExp = /\b[a-zA-Zà-úÀ-Ú-\s]+\b/
+const emailRegex: RegExp = /\S+@\w+\.\w{2,6}(\.\w{2})?/gi
+const cpfRegex: RegExp = /\b[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}\b/
+const cnpjRegex: RegExp = /\b[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2}\b/
+const telefoneRegex: RegExp = /\b(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))\b/
+const cepRegex: RegExp = /\b\d{5}-\d{3}\b/
+
 
 //event listener para botao login
 document.addEventListener("DOMContentLoaded", function (){
@@ -19,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function (){
         let password = (<HTMLInputElement>document.getElementById('password')).value
         let tipoLogin = (<HTMLInputElement>document.getElementById('opcao-login')).value
     
-        if(email && password){
+        if(emailRegex.test(email) && password){
             if(tipoLogin=='candidato'){
 
                 if(LoginService.checarEmailCandidato(candidatos, email))
@@ -78,7 +85,7 @@ cadastroCandidatoButton?.addEventListener('click', function() {
     let cep=(<HTMLInputElement>document.getElementById('cep-candidato')).value
     let descricao=(<HTMLInputElement>document.getElementById('descricao-candidato')).value
 
-    if(nome && cpf && idade && email && password && estado && cep && descricao)
+    if(nomeRegex.test(nome) && cpfRegex.test(cpf) && idade && emailRegex.test(email) && password && estado && cepRegex.test(cep) && descricao)
     {
         if(LoginService.checarEmailCandidato(candidatos, email)){
 
@@ -107,7 +114,7 @@ cadastroCandidatoButton?.addEventListener('click', function() {
         }
     }
     else{
-        alert('Falha no cadastro. Tente novamente.')
+        alert('Falha no cadastro. Certifique-se de que seus dados são válidos e tente novamente.')
     }
 })
 
@@ -124,7 +131,7 @@ cadastroEmpresaButton?.addEventListener('click', function() {
     let cep=(<HTMLInputElement>document.getElementById('cep-empresa')).value
     let descricao=(<HTMLInputElement>document.getElementById('descricao-empresa')).value
 
-    if(nome && cnpj && email && password && pais && estado && cep && descricao)
+    if(nomeRegex.test(nome) && cnpjRegex.test(cnpj) && emailRegex.test(email) && password && pais && estado && cepRegex.test(cep) && descricao)
     {
         if(LoginService.checarEmailEmpresa(empresas, email)){
 
@@ -153,7 +160,7 @@ cadastroEmpresaButton?.addEventListener('click', function() {
         }
     }
     else{
-        alert('Falha no cadastro. Tente novamente.')
+        alert('Falha no cadastro. Certifique-se de que seus dados são válidos e tente novamente.')
     }
 
 })
