@@ -1,4 +1,4 @@
-import { Empresa } from "./empresa";
+import { Empresa } from "../model/empresa";
 
 export class EmpresaDAO{
 

@@ -1,4 +1,4 @@
-import { Candidato } from "./candidato";
+import { Candidato } from "../model/candidato";
 
 export class CandidatoDAO{
 

@@ -1,12 +1,12 @@
-import { Candidato } from "../candidato/candidato";
-import { CandidatoDAO } from "../candidato/candidatoDAO";
-import { Empresa } from "../empresa/empresa";
-import { EmpresaDAO } from "../empresa/empresaDAO";
+import { Candidato } from "../model/candidato";
+import { CandidatoDAO } from "../DAO/candidatoDAO";
+import { Empresa } from "../model/empresa";
+import { EmpresaDAO } from "../DAO/empresaDAO";
 
 export class LoginService{
 
     public static checarEmailCandidato(candidatos: CandidatoDAO, email: string): boolean{
-        let listaCandidatos: Array<Candidato> =candidatos.listaCandidatos()
+        let listaCandidatos: Array<Candidato> = candidatos.listaCandidatos()
         if(listaCandidatos.some(item => item.email === email)){
             return true
         }
