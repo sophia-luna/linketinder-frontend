@@ -23,6 +23,22 @@ export class VagaDAO{
         this.updateLocalStorage()
     }
 
+    public excluirVagaPorEmpresa(email: string){
+        
+        let excluir: Array<Vaga> = new Array<Vaga>
+
+        this.vagas.forEach( function(vaga){
+            if(vaga.emailEmpresa == email){
+                excluir.push(vaga)
+            }
+        })
+
+        for(let i=0; i<excluir.length; i++){
+            this.excluirVaga(excluir[i].id)
+        }
+
+    }
+
     public checarVaga(id: string): boolean{
         if(this.vagas.some(item => item.id === id)){
             return true
@@ -47,6 +63,7 @@ export class VagaDAO{
     }
 
     public updateLocalStorage(): void{
-        localStorage.setItem("vagas", JSON.stringify(this.vagas))
+        localStorage.removeItem('vagas')
+        localStorage.setItem('vagas', JSON.stringify(this.vagas))
     }
 }

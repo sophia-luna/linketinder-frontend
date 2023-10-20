@@ -1,26 +1,37 @@
 import { Empresa } from "../model/empresa";
+import { VagaDAO } from "./vagaDAO";
 
 export class EmpresaDAO{
 
     empresas: Array<Empresa>
 
     constructor(){
+
         this.empresas=new Array<Empresa>
+
         if(localStorage.hasOwnProperty("empresas")){
             this.empresas = JSON.parse(localStorage.getItem("empresas")!)
         }
+
     }
 
     public cadastrarEmpresa(empresa: Empresa){
+
         this.empresas.push(empresa)
         this.updateLocalStorage()
+
     }
 
-    public excluirEmpresa(email: string){
+    public excluirEmpresa(email: string, vagas: VagaDAO){
+
         let empresa: Empresa = this.empresas.find(item => item.email == email)!
         let index=this.empresas.indexOf(empresa);
         this.empresas.splice(index, 1);
+
+        vagas.excluirVagaPorEmpresa(email)
+        
         this.updateLocalStorage()
+
     }
 
     public limparEmpresas(){

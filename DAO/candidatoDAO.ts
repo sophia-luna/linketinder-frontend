@@ -36,6 +36,6 @@ export class CandidatoDAO{
     }
 
     public updateLocalStorage(): void{
-        localStorage.setItem("candidatos", JSON.stringify(this.candidatos))
+        localStorage.setItem('candidatos', JSON.stringify(this.candidatos))
     }
 }

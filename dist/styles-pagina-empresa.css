@@ -65,7 +65,7 @@ h2{
     background-color: #00916E;
     color: #fff;
     padding-top: 50px;
-    height: 1550px;
+    height: 2300px;
     width: 100%;
 }
 
@@ -101,7 +101,7 @@ h2{
 }
 
 #estatistica h2{
-    color: #0055d5;
+    color: #415D43;
 }
 
 /* criar vaga */
@@ -116,10 +116,10 @@ h2{
 /* cadastro */
 #cadastro{
     background-color: #8FB996;
-    width: 50%;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
-    height: 700px;
+    height: 440px;
     margin-top: 40px;
 }
 
